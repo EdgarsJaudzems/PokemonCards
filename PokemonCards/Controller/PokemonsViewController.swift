@@ -6,17 +6,21 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PokemonsViewController: UIViewController {
     
     var pokey: [Pokemon] = []
+    var player: AVAudioPlayer!
 
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        playSound()
         self.title = "Pokémon List"
         getPokemonData()
+
     }
     
     func getPokemonData(){
@@ -42,6 +46,13 @@ class PokemonsViewController: UIViewController {
                 print("data is nil")
             }
         }
+    }
+    
+    func playSound() {
+        let url = Bundle.main.url(forResource: "pikachuSound", withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+                
     }
     
     
@@ -77,6 +88,7 @@ extension PokemonsViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "pokemonCell", for: indexPath)
         
         cell.textLabel?.text = pokey[indexPath.row].name
+        cell.detailTextLabel?.text = "Nr: \(pokey[indexPath.row].number)"
         
         return cell
     }
