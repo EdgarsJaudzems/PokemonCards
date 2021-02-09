@@ -7,25 +7,25 @@
 
 import UIKit
 
-class ImageController {
+class ImageController{
     
-    static func getImage(for url: String, completion: @escaping(UIImage?) -> Void) {
+    static func getImage(for url: String, comletion: @escaping(UIImage?) -> Void ){
         
         guard let imageUrl = URL(string: url) else {
-            fatalError("Could not create url from string \(url)")
+            fatalError("could not create url this String \(url)")
         }
         
         NetworkController.performRequest(for: imageUrl, httpMethod: .get) { (data, err) in
-            guard let data = data, let image = UIImage(data: data) else {
-                DispatchQueue.main.async { completion(nil)}
+            guard let data = data, let image = UIImage(data: data) else{
+                DispatchQueue.main.async { comletion(nil) }
                 return
             }
-                
-                
-            DispatchQueue.main.async { completion(image) }
+            
+            DispatchQueue.main.async { comletion(image) }
         }
-
+        
     }
     
 }
+
 

@@ -15,37 +15,38 @@ class PokemonsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Pokemon List"
+        self.title = "Pokémon List"
         getPokemonData()
     }
     
-    func getPokemonData() {
+    func getPokemonData(){
         let url = URL(string: "https://api.pokemontcg.io/v1/cards")!
         
         NetworkController.performRequest(for: url, httpMethod: .get) {(data, err) in
             if let error = err {
-                print("Getting err from url \(url.absoluteString), error: \(error.localizedDescription)")
+                print("getting err from url \(url.absoluteString) , error: \(error.localizedDescription)")
             }
             
             if let data = data {
-                do {
+                do{
+                   
                     let card = try JSONDecoder().decode(Card.self, from: data)
                     self.pokey = card.cards
-                } catch {
-                    print("Failed to decode pokemon data \(error). data: \(data)")
+                }catch{
+                    print("failed to decode pokemon data \(error) , data: \(data)")
                 }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-            } else {
-                print("Data is nil")
+            }else{
+                print("data is nil")
             }
         }
     }
+    
+    
 
-    
-    
-    
+
     
     
     // MARK: - Navigation
@@ -61,8 +62,8 @@ class PokemonsViewController: UIViewController {
             
         }
     }
-    
 
+    
 }
 
 extension PokemonsViewController: UITableViewDataSource {
@@ -82,4 +83,3 @@ extension PokemonsViewController: UITableViewDataSource {
     
     
 }
-

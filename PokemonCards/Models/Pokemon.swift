@@ -10,13 +10,13 @@ import Foundation
 
 struct Pokemon: Decodable {
     let name: String
-    var imageURL: String?
+    var imageUrl: String?
     //let number_Card: String
     let number: String
     
     enum CodingKeys: String, CodingKey {
         case name
-        case imageURL
+        case imageUrl
      //   case number_Card = "number"
         case number
     }
