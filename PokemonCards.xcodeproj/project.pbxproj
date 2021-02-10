@@ -17,6 +17,7 @@
 		1884153825D2BC2200522C08 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884153725D2BC2200522C08 /* Pokemon.swift */; };
 		1884153C25D2BE2700522C08 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884153B25D2BE2700522C08 /* NetworkController.swift */; };
 		1884153F25D2C27600522C08 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884153E25D2C27600522C08 /* ImageController.swift */; };
+		18BE192D25D407BE002A0BDB /* PokeyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE192C25D407BE002A0BDB /* PokeyTableViewCell.swift */; };
 		FD5070EE25D3FFF000EE3D23 /* Pokemon Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD5070EC25D3FFF000EE3D23 /* Pokemon Solid.ttf */; };
 		FD5070EF25D3FFF000EE3D23 /* Pokemon Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD5070ED25D3FFF000EE3D23 /* Pokemon Hollow.ttf */; };
 		FD5070F225D4002500EE3D23 /* pikachuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD5070F125D4002500EE3D23 /* pikachuSound.mp3 */; };
@@ -36,6 +37,7 @@
 		1884153725D2BC2200522C08 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		1884153B25D2BE2700522C08 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		1884153E25D2C27600522C08 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		18BE192C25D407BE002A0BDB /* PokeyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeyTableViewCell.swift; sourceTree = "<group>"; };
 		FD5070EC25D3FFF000EE3D23 /* Pokemon Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Solid.ttf"; sourceTree = "<group>"; };
 		FD5070ED25D3FFF000EE3D23 /* Pokemon Hollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Hollow.ttf"; sourceTree = "<group>"; };
 		FD5070F125D4002500EE3D23 /* pikachuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pikachuSound.mp3; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				1884151A25D2B85400522C08 /* PokemonsViewController.swift */,
+				18BE192C25D407BE002A0BDB /* PokeyTableViewCell.swift */,
 				1884153425D2BB8400522C08 /* PokemonDetailViewController.swift */,
 				FD80C7EE25D31DB000673002 /* PokemonAboutViewController.swift */,
 			);
@@ -224,6 +227,7 @@
 				1884153825D2BC2200522C08 /* Pokemon.swift in Sources */,
 				1884151B25D2B85400522C08 /* PokemonsViewController.swift in Sources */,
 				1884153C25D2BE2700522C08 /* NetworkController.swift in Sources */,
+				18BE192D25D407BE002A0BDB /* PokeyTableViewCell.swift in Sources */,
 				FD80C7EF25D31DB000673002 /* PokemonAboutViewController.swift in Sources */,
 				1884153525D2BB8400522C08 /* PokemonDetailViewController.swift in Sources */,
 				1884151725D2B85400522C08 /* AppDelegate.swift in Sources */,

@@ -11,8 +11,8 @@ import Foundation
 struct Pokemon: Decodable {
     let name: String
     var imageUrl: String?
-    let supertype: String
-    let subtype: String
+    let supertype: String?
+    let subtype: String?
     let id: String
     var number: String
    // var hp: String
@@ -28,8 +28,7 @@ struct Pokemon: Decodable {
         case subtype
         case id
         case number
-      //  case hp
-     //   case number_Card = "number"
+      //  case name, imageUrl, supertype ... 
 
     }
 }
