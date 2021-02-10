@@ -34,8 +34,7 @@ class PokemonDetailViewController: UIViewController {
         pokemonName.text = "Name: \(pokemon?.name ?? "No name")"
         pokemonSupertype.text = "Supertype: \(pokemon?.supertype ?? "No supertype information")"
         pokemonSubtype.text = "Subtype: \(pokemon?.subtype ?? "No subtype information")"
-        
-//        pokemonHp.text = "Evolves from: \(pokemon?.hp ?? "No hp information")"
+        pokemonHp.text = "HP: \(pokemon?.hp ?? "No information")"
         
     }
     

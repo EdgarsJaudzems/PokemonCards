@@ -22,14 +22,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6F7-h0-RCF">
-                                <rect key="frame" x="87" y="140" width="240" height="128"/>
+                                <rect key="frame" x="87" y="88" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="DE7-GI-Z2j"/>
                                     <constraint firstAttribute="height" constant="128" id="McO-fj-aFr"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3s-NW-9ym">
-                                <rect key="frame" x="97" y="243" width="220" height="260"/>
+                                <rect key="frame" x="97" y="191" width="220" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="I3s-NW-9ym" secondAttribute="height" multiplier="11:13" id="m3f-FF-wWf"/>
                                     <constraint firstAttribute="height" constant="260" id="oio-4K-698"/>
@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="0tn-hG-oPe">
-                                <rect key="frame" x="107" y="481" width="200" height="180"/>
+                                <rect key="frame" x="107" y="429" width="200" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="Igf-di-vRY"/>
                                     <constraint firstAttribute="width" constant="200" id="Txv-PB-3xT"/>
@@ -77,8 +77,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cTM-V8-MgH">
-                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pokemonCell" rowHeight="284" id="fqE-lH-JY2" customClass="PokeyTableViewCell" customModule="PokemonCards" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="284"/>
@@ -87,73 +87,69 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="cdd-ju-e6j">
-                                                    <rect key="frame" x="0.0" y="20" width="394" height="264"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="3pU-L5-TYK">
+                                                    <rect key="frame" x="41" y="50" width="332" height="184"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fZh-WP-ECf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="264"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="184"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="190" id="MI6-oi-ITN"/>
-                                                                <constraint firstAttribute="width" constant="120" id="c8x-mg-VHU"/>
+                                                                <constraint firstAttribute="width" constant="90" id="c8x-mg-VHU"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="jaF-6A-aut">
-                                                            <rect key="frame" x="153" y="0.0" width="241" height="264"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7nT-1a-abu">
+                                                            <rect key="frame" x="112" y="0.0" width="220" height="184"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62r-71-Bso">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="241" height="40"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62r-71-Bso">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="40"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="40" id="L8t-qh-bdm"/>
-                                                                        <constraint firstAttribute="width" constant="180" id="Yky-k7-qqo"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Yky-k7-qqo"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="dQk-K4-G3y"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKf-n5-AeV">
-                                                                    <rect key="frame" x="0.0" y="49" width="241" height="40"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKf-n5-AeV">
+                                                                    <rect key="frame" x="0.0" y="48" width="220" height="40"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="40" id="bfP-Yy-xEJ"/>
-                                                                        <constraint firstAttribute="width" constant="240" id="hfa-TQ-d6W"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="hfa-TQ-d6W"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="pee-Xc-Wkv"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQf-dV-Mmd">
-                                                                    <rect key="frame" x="0.0" y="98" width="241" height="40"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQf-dV-Mmd">
+                                                                    <rect key="frame" x="0.0" y="96" width="220" height="40"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="40" id="42n-eP-Fz4"/>
-                                                                        <constraint firstAttribute="width" constant="240" id="Ozp-g4-BM4"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="O0z-gP-kHb"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Ozp-g4-BM4"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNt-bT-E8T">
-                                                                    <rect key="frame" x="0.0" y="147" width="241" height="117"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNt-bT-E8T">
+                                                                    <rect key="frame" x="0.0" y="144" width="220" height="40"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="240" id="UTc-q9-fNu"/>
-                                                                        <constraint firstAttribute="height" constant="40" id="bTm-SH-gyB"/>
+                                                                        <constraint firstAttribute="height" constant="40" id="7ri-A0-wxQ"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="UTc-q9-fNu"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
+                                                                    <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="220" id="vnq-sV-oCh"/>
+                                                            </constraints>
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="cdd-ju-e6j" secondAttribute="bottom" constant="20" id="1Hn-gS-iNp"/>
-                                                <constraint firstItem="cdd-ju-e6j" firstAttribute="top" secondItem="lPP-yc-I3r" secondAttribute="top" id="BhB-sh-5YD"/>
-                                                <constraint firstItem="cdd-ju-e6j" firstAttribute="leading" secondItem="lPP-yc-I3r" secondAttribute="leading" id="L3b-OD-hpo"/>
-                                                <constraint firstItem="cdd-ju-e6j" firstAttribute="top" secondItem="lPP-yc-I3r" secondAttribute="top" constant="20" id="ODD-P1-LkH"/>
-                                                <constraint firstItem="cdd-ju-e6j" firstAttribute="leading" secondItem="lPP-yc-I3r" secondAttribute="leading" constant="20" id="ZX2-aA-7QV"/>
-                                                <constraint firstAttribute="bottom" secondItem="cdd-ju-e6j" secondAttribute="bottom" id="erU-hP-QNj"/>
-                                                <constraint firstAttribute="trailing" secondItem="cdd-ju-e6j" secondAttribute="trailing" id="lHj-xC-of8"/>
-                                                <constraint firstAttribute="trailing" secondItem="cdd-ju-e6j" secondAttribute="trailing" constant="20" id="lgW-Mf-dc8"/>
+                                                <constraint firstItem="3pU-L5-TYK" firstAttribute="centerY" secondItem="lPP-yc-I3r" secondAttribute="centerY" id="2Nw-1N-Kdm"/>
+                                                <constraint firstItem="3pU-L5-TYK" firstAttribute="centerX" secondItem="lPP-yc-I3r" secondAttribute="centerX" id="BhP-gq-5bL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.95806695997100511" green="0.95806695997100511" blue="0.95806695997100511" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -184,6 +180,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="N7C-wZ-iUd">
                         <barButtonItem key="rightBarButtonItem" title="About" id="VvF-uf-XYH">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="hYX-Di-ccG" kind="show" id="qHS-n4-Q4n"/>
                             </connections>
@@ -206,7 +203,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HF9-gI-sfi">
-                                <rect key="frame" x="20" y="160" width="374" height="638"/>
+                                <rect key="frame" x="20" y="108" width="374" height="638"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WvC-P4-Hdh">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="408"/>
@@ -308,10 +305,12 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IwC-9a-GFQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="vw1-Ed-DfH">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vw1-Ed-DfH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Gn-gW-7nh">
@@ -329,14 +328,14 @@
     <resources>
         <image name="pikachu" width="640" height="640"/>
         <image name="pokemon_logo" width="640" height="234"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

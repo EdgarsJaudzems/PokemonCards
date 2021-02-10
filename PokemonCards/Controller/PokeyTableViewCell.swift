@@ -16,13 +16,11 @@ class PokeyTableViewCell: UITableViewCell {
     @IBOutlet weak var subtypeLabel: UILabel!
     @IBOutlet weak var supertypeLabel: UILabel!
     
-    
     func setUI(with: Pokemon) {
         
         nameLabel.text = "Name: " + with.name
-        cardValueLabel.text = "Card value: " + with.number
+        cardValueLabel.text = "Value: " + with.number
 
-        
         if with.subtype != nil {
             subtypeLabel.text = "Card: " + with.subtype!
         }
@@ -30,15 +28,14 @@ class PokeyTableViewCell: UITableViewCell {
         if let supertype = with.supertype {
             supertypeLabel.text = supertype
             if with.supertype == "Trainer" {
-                contentView.backgroundColor = .systemGreen
+                contentView.backgroundColor = .systemGray
             } else {
-                contentView.backgroundColor = .systemRed
+                contentView.backgroundColor = .systemYellow
             }
         }
         
-//        subtypeLabel.text = "Card: " + with.subtype! ?? ""
+        //subtypeLabel.text = "Card: " + with.subtype! ?? ""
         //cardValueLabel.text = "Card Value: " + with.number
-        
         
         ImageController.getImage(for: with.imageUrl ?? "", comletion: { image in
             self.pokeyImageView.image = image

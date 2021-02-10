@@ -89,9 +89,6 @@ extension PokemonsViewController: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
         
-//        cell.textLabel?.text = pokey[indexPath.row].name
-//        cell.detailTextLabel?.text = "Nr: \(pokey[indexPath.row].number)"
-        
         let poke = pokey[indexPath.row]
         cell.setUI(with: poke)
         cell.selectionStyle = .none
@@ -101,6 +98,4 @@ extension PokemonsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 220
     }
-    
-    
 }
