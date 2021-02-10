@@ -17,10 +17,10 @@
 		1884153825D2BC2200522C08 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884153725D2BC2200522C08 /* Pokemon.swift */; };
 		1884153C25D2BE2700522C08 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884153B25D2BE2700522C08 /* NetworkController.swift */; };
 		1884153F25D2C27600522C08 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884153E25D2C27600522C08 /* ImageController.swift */; };
+		FD5070EE25D3FFF000EE3D23 /* Pokemon Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD5070EC25D3FFF000EE3D23 /* Pokemon Solid.ttf */; };
+		FD5070EF25D3FFF000EE3D23 /* Pokemon Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD5070ED25D3FFF000EE3D23 /* Pokemon Hollow.ttf */; };
+		FD5070F225D4002500EE3D23 /* pikachuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD5070F125D4002500EE3D23 /* pikachuSound.mp3 */; };
 		FD80C7EF25D31DB000673002 /* PokemonAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD80C7EE25D31DB000673002 /* PokemonAboutViewController.swift */; };
-		FD80C7F425D324D800673002 /* pikachuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FD80C7F325D324D800673002 /* pikachuSound.mp3 */; };
-		FD80C7FE25D32B2B00673002 /* Pokemon Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD80C7FC25D32B2B00673002 /* Pokemon Hollow.ttf */; };
-		FD80C7FF25D32B2B00673002 /* Pokemon Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD80C7FD25D32B2B00673002 /* Pokemon Solid.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +36,10 @@
 		1884153725D2BC2200522C08 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		1884153B25D2BE2700522C08 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		1884153E25D2C27600522C08 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		FD5070EC25D3FFF000EE3D23 /* Pokemon Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Solid.ttf"; sourceTree = "<group>"; };
+		FD5070ED25D3FFF000EE3D23 /* Pokemon Hollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Hollow.ttf"; sourceTree = "<group>"; };
+		FD5070F125D4002500EE3D23 /* pikachuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pikachuSound.mp3; sourceTree = "<group>"; };
 		FD80C7EE25D31DB000673002 /* PokemonAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAboutViewController.swift; sourceTree = "<group>"; };
-		FD80C7F325D324D800673002 /* pikachuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pikachuSound.mp3; path = ../../../../../Downloads/pikachuSound.mp3; sourceTree = "<group>"; };
-		FD80C7FC25D32B2B00673002 /* Pokemon Hollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pokemon Hollow.ttf"; path = "../../../../../Downloads/pokemon-2/Pokemon Hollow.ttf"; sourceTree = "<group>"; };
-		FD80C7FD25D32B2B00673002 /* Pokemon Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pokemon Solid.ttf"; path = "../../../../../Downloads/pokemon-2/Pokemon Solid.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 		FD80C7F225D324BB00673002 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				FD80C7F325D324D800673002 /* pikachuSound.mp3 */,
+				FD5070F125D4002500EE3D23 /* pikachuSound.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -141,8 +141,8 @@
 		FD80C7F725D3286E00673002 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FD80C7FC25D32B2B00673002 /* Pokemon Hollow.ttf */,
-				FD80C7FD25D32B2B00673002 /* Pokemon Solid.ttf */,
+				FD5070ED25D3FFF000EE3D23 /* Pokemon Hollow.ttf */,
+				FD5070EC25D3FFF000EE3D23 /* Pokemon Solid.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -204,11 +204,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD80C7F425D324D800673002 /* pikachuSound.mp3 in Resources */,
+				FD5070EE25D3FFF000EE3D23 /* Pokemon Solid.ttf in Resources */,
+				FD5070EF25D3FFF000EE3D23 /* Pokemon Hollow.ttf in Resources */,
 				1884152325D2B85A00522C08 /* LaunchScreen.storyboard in Resources */,
-				FD80C7FE25D32B2B00673002 /* Pokemon Hollow.ttf in Resources */,
-				FD80C7FF25D32B2B00673002 /* Pokemon Solid.ttf in Resources */,
 				1884152025D2B85A00522C08 /* Assets.xcassets in Resources */,
+				FD5070F225D4002500EE3D23 /* pikachuSound.mp3 in Resources */,
 				1884151E25D2B85400522C08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
